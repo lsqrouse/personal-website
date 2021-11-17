@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import {projects} from '../services/data'
 import ProjectCard from '../components/ProjectCard'
 import { makeStyles } from '@material-ui/core/styles';
@@ -16,11 +17,18 @@ const useStyles = makeStyles({
 export default function Projects() {
   const classes = useStyles();
     return (
+			<div className='App'>
+        <Link to="/">
+      <button variant="outlined">
+        Home
+      </button>
+      </Link>
       <Grid container spacing={1} className={classes.root}>
         {projects.map(project => 
         <Grid item sm={4} key={projects.indexOf(project)}>
           <ProjectCard project={project} />
         </Grid>)}
       </Grid>
+      </div>    
   );
 }

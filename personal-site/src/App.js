@@ -1,14 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { Navbar, NavbarBrand } from 'reactstrap';
-import Menu from './components/menu';
 import { PLACES } from './shared/places';
-import Greet from './components/greet';
-import {projects} from './services/data'
-import ProjectCard from './components/ProjectCard'
 import { makeStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
+import Main from './components/Main'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 
 class App extends React.Component {					
   
@@ -30,17 +26,15 @@ class App extends React.Component {
         flexGrow: 1,
       }
     });
-		return (
-      
-			<div className='App'>
-        <Grid container spacing={1} className={classes.root}>
-          {projects.map(project => 
-          <Grid item sm={4} key={projects.indexOf(project)}>
-            <ProjectCard project={project} />
-          </Grid>)}
-        </Grid>
-			</div>
-		);
+    return (
+      <div className="App">
+        <Router>
+          <Routes>
+            <Route path='/*' element={<Main/>}/>
+          </Routes>
+        </Router>
+      </div>
+    );
 	}
 }
 
