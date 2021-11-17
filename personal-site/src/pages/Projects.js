@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 import {projects} from '../services/data'
 import ProjectCard from '../components/ProjectCard'
 import { makeStyles } from '@material-ui/core/styles';
