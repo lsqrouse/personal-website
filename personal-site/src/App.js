@@ -1,46 +1,47 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import logo from './logo.svg';
 import './App.css';
-import Nav from './components/Nav';
-import Home from './pages/Home';
-import Footer from './components/Footer';
-import Projects from './pages/Projects';
-import ResumePage from './pages/ResumePage';
-import Container from '@material-ui/core/Container';
-import Box from '@material-ui/core/Box';
-import CssBaseline from '@material-ui/core/CssBaseline';
+import { Navbar, NavbarBrand } from 'reactstrap';
+import Menu from './components/menu';
+import { PLACES } from './shared/places';
+import Greet from './components/greet';
+import {projects} from './services/data'
+import ProjectCard from './components/ProjectCard'
 import { makeStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
 
-const useStyles = makeStyles({
-  root: {
-    display: 'flex',
-    flexDirection: 'column',
-    minHeight: '100vh',
-    height: "100%"
-  },
-  footer: {
-    padding: "2%",
-    marginTop: 'auto',
-    marginLeft: 'auto',
-  }
-})
+class App extends React.Component {					
+  
+	constructor(props){
+		super(props);
+		
+		this.state = {
+			places: PLACES
+		};
+	}
 
-export default function App() {
-  const classes = useStyles();
-  return (
-    <div className={classes.root}>
-      <CssBaseline />      
-      <Container className={classes.root}>
-        <Box my={5}>
-          <Nav />
-        </Box>
-        <Route exact path="/" component={Home} />
-        <Route path="/projects" component={Projects} />
-        <Route path="/resume" component={ResumePage} />
-        <footer className={classes.footer}>
-          <Footer/>
-        </footer>
-      </Container>
-    </div>
-  )
+	
+	render(){
+    const classes = makeStyles({
+      root: {
+        display: 'flex',
+        flexWrap: "wrap",
+        justifyContent: "space-between",
+        flexGrow: 1,
+      }
+    });
+		return (
+      
+			<div className='App'>
+        <Grid container spacing={1} className={classes.root}>
+          {projects.map(project => 
+          <Grid item sm={4} key={projects.indexOf(project)}>
+            <ProjectCard project={project} />
+          </Grid>)}
+        </Grid>
+			</div>
+		);
+	}
 }
+
+export default App;
