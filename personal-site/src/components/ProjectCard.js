@@ -28,7 +28,7 @@ const useStyles = makeStyles({
 
 const ProjectCard = props =>  {
   const classes = useStyles();
-  const {imageURL, title, description, websiteURL, githubURL, technology, blogURL, youtubeURL} = props.project
+  const {imageURL, title, description, websiteURL, githubURL, technology, blogURL, youtubeURL, source} = props.project
   const img = "images/" + imageURL
 
   return (
@@ -54,15 +54,18 @@ const ProjectCard = props =>  {
           <Typography variant="body1" color="textSecondary" component="p" className={classes.caps}>
             {technology}
           </Typography>
+          <Typography variant="body1" color="textSecondary" component="p" className={classes.caps}>
+            {source}
+          </Typography>
         </CardContent>
       <CardActions>
         {websiteURL ? <Button size="small" color="default" href={websiteURL} aria-label="visit-external-website">
           <Icon className="fas fa-external-link-alt"/>
         </Button> : null}
         
-        <Button size="small" color="default" href={githubURL} aria-label="github">
+        {githubURL ? <Button size="small" color="default" href={githubURL} aria-label="github">
           <Icon className="fa fa-github"/>
-        </Button>
+        </Button> : null}
 
         {blogURL ? <Button size="small" color="default" href={blogURL} aria-label="blog-post">
         <Icon className="fab fa-dev"/>

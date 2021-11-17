@@ -18,11 +18,11 @@ class Test extends React.Component {
 		return (
 			<div className='App'>
                 <p>Hello There, this is test</p>
-                <Link to="/projects">
+                {/* <Link to="/projects">
                     <button variant="outlined">
                         Projects
                     </button>
-                </Link>
+                </Link> */}
 			</div>
 		);
 	}

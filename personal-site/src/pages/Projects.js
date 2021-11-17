@@ -18,11 +18,11 @@ export default function Projects() {
   const classes = useStyles();
     return (
 			<div className='App'>
-        <Link to="/">
+        {/* <Link to="/">
       <button variant="outlined">
         Home
       </button>
-      </Link>
+      </Link> */}
       <Grid container spacing={1} className={classes.root}>
         {projects.map(project => 
         <Grid item sm={4} key={projects.indexOf(project)}>

@@ -47,7 +47,7 @@ body {
   --med-blue-two: #93acc9;
   --dark-blue: #6e8aaa;
   --red-brown: #523237;
-  background: linear-gradient(var(--pink-one), var(--pink-two), var(--light-blue), var(--med-blue-one), var(--med-blue-two), var(--dark-blue) );
+  background: linear-gradient(var(--dark-blue), var(--med-blue-two), var(--med-blue-one), var(--light-blue-two), var(--light-blue));
 }
 
 code {

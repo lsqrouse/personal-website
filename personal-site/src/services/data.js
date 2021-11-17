@@ -1,23 +1,16 @@
 export const data = {
-	firstName: "Sylvia",
-	lastName: "Pap",
-	headline: "Current Software Engineer, former Aspiring Lawyer",
+	firstName: "Quinn",
+	lastName: "Rouse",
+	headline: "Current Junior in Computer Science at Purdue University",
 	profilePic: "profilepic.png",
 	website: "http://www.sylviapap.com",
-	github: "http://github.com/sylviapap",
-	linkedin: "https://www.linkedin.com/in/sylvia-pap",
-	blog: "https://dev.to/sylviapap",
-	twitter: "https://twitter.com/sylvialpap",
-	stackOverflow: "https://stackoverflow.com/users/13272348/sylvia-pap",
-	leetCode: "https://leetcode.com/sylviapap/",
+	github: "http://github.com/lsqrouse",
+	linkedin: "https://www.linkedin.com/in/quinn-rouse-839969168/",
 };
 
 const githubRepos = {
-	racoon: {
-		frontend: "https://github.com/sylviapap/racoon-frontend",
-		backend: "https://github.com/sylviapap/racoon-backend",
-	},
-	twitterClone: "https://github.com/sylviapap/twitter-clone",
+	stockSent: "https://github.com/lsqrouse/StockScraper",
+	multiboard: "https://github.com/CS-307-Group-22/multiboar",
 	talkr: "https://github.com/sylviapap/TalkR",
 	subscription: "https://github.com/sylviapap/client-subscription-app",
 	whack: "https://github.com/sylviapap/whack-a-virus",
@@ -27,8 +20,8 @@ const githubRepos = {
 };
 
 const liveSiteURLs = {
-	racoon: "https://racoon.digital/",
-	twitterClone: "https://sylvia-twitter.netlify.app/",
+	stockSent: "https://stock-scraper-test.herokuapp.com/",
+	multiboard: "https://multiboar.herokuapp.com/",
 	talkr: "https://translation-chat-app.herokuapp.com/",
 	subscription: "https://subscribr.netlify.app/",
 	whack: "https://sylviapap.github.io/whack-a-virus/",
@@ -57,34 +50,32 @@ const blogURLs = {
 
 export const projects = [
 	{
-		title: "Life Story Twitter",
-		imageURL: "twitter-clone.jpg",
-		websiteURL: liveSiteURLs.twitterClone,
+		title: "Multiboard",
+		imageURL: "multiboard.jpg",
+		websiteURL: liveSiteURLs.multiboard,
 		description:
-			"Clone project to answer application question 'Tell your life story in Tweets'",
-		technology: "React • JavaScript • CSS • HTML • Material UI",
-		githubURL: githubRepos.twitterClone,
+			"Web application that allows user to create and play board games online.",
+		technology: "Bootstrap • JavaScript • CSS • HTML • NodeJS • PostGresQL",
+		source: "School Project",
+		githubURL: githubRepos.multiboard,
 	},
 	{
-		title: "Racoon",
-		imageURL: "racoon-map.png",
-		websiteURL: liveSiteURLs.racoon,
-		description: "COVID-19 diagnostic reporting service",
+		title: "Stock Sentiment Analyzer",
+		imageURL: "stocksent.jpg",
+		websiteURL: liveSiteURLs.stockSent,
+		description: "Web Scraping tool to use machine learning on posts from popular stock discussion forums to analyze sentminent of the market",
 		technology:
-			"React • Redux • Google Maps • Infermedica • Rails • JSON Web Tokens • BCrypt • Active Model Serializers • CSS",
-		githubURL: githubRepos.racoon.frontend,
-		blogURL: blogURLs.racoon,
-		youtubeURL: "https://youtu.be/SntYf3koT1c",
+			"Node.JS • HTML/CSS • Python • PostGresQL",
+		source: "Pesronal Project",
+		githubURL: githubRepos.stockSent,
 	},
 	{
-		title: "Translation Chat Messenger",
+		title: "Automatic Locator and Namer (ALAN)",
 		imageURL: "talkr.png",
-		websiteURL: liveSiteURLs.talkr,
 		description:
-			"Auto-detects & translates group chat messages to user's preferred language",
-		technology: "Rails • BCrypt • Google Cloud Translation • Bootstrap",
-		githubURL: githubRepos.talkr,
-		youtubeURL: "https://youtu.be/WzkuAMt6k8I",
+			"Program to automatically detect elements on a webpage to be tested, and write a simple automated test for them",
+		source: 'Internship Project',
+		technology: "Python • Sellenium • C#.NET",
 	},
 	{
 		title: "Subscription Manager",
@@ -139,10 +130,10 @@ export const skills = [
 		name: "Rails",
 		href: githubRepos.talkr,
 	},
-	{
-		name: "React",
-		href: githubRepos.racoon.frontend,
-	},
+	// {
+	// 	name: "React",
+	// 	href: githubRepos.racoon.frontend,
+	// },
 	{
 		name: "CSS",
 		href: githubRepos.whack,
@@ -151,10 +142,10 @@ export const skills = [
 		name: "HTML",
 		href: githubRepos.twitterClone,
 	},
-	{
-		name: "Test Driven Development",
-		href: githubRepos.racoon.backend,
-	},
+//	{
+	// 	name: "Test Driven Development",
+	// 	href: githubRepos.racoon.backend,
+	// },
 	{
 		name: "Data Structures & Algorithms",
 		href: data.leetCode,
@@ -171,21 +162,6 @@ export const contactItems = [
 		href: data.github,
 		icon: "fa fa-github",
 		text: "GitHub",
-	},
-	{
-		href: data.blog,
-		icon: "fab fa-dev",
-		text: "Blog",
-	},
-	{
-		href: data.twitter,
-		icon: "fa fa-twitter",
-		text: "Twitter",
-	},
-	{
-		href: data.stackOverflow,
-		icon: "fab fa-stack-overflow",
-		text: "Stack Overflow",
 	},
 ];
 

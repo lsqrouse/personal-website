@@ -37,7 +37,7 @@ export default function ResumePage() {
     <div className={classes.root}>
     <Container className={classes.container}>
       <iframe 
-        src="Sylvia-Pap-Resume.pdf" 
+        src="Quinn Rouse Resume.pdf" 
         title="resume"
         className={classes.iframe}
         >
