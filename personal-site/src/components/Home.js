@@ -1,4 +1,4 @@
-import { data, contactItems, blogPosts, skills } from "../services/data";
+import { data, contactItems, skills } from "../services/data";
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
@@ -9,7 +9,6 @@ import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import CardActions from "@material-ui/core/CardActions";
 import Icon from "@material-ui/core/Icon";
-import Link from "@material-ui/core/Link";
 
 const useStyles = makeStyles({
 	root: {
@@ -57,6 +56,17 @@ const useStyles = makeStyles({
 		padding: "5%",
 		margin: "1%",
 	},
+  skillscard: {
+		minHeight: "65px",
+		display: "flex",
+		flexWrap: "wrap",
+		justifyContent: "center",
+    margin: 'auto',
+    alignItems: "center",
+    direction: 'column',
+    spacing: '0',    
+
+	},
 });
 
 export default function Home() {
@@ -101,45 +111,18 @@ export default function Home() {
 				<Card className={classes.root}>
 					<CardContent>
 						<Typography variant="body2" gutterBottom>
-							Before joining the world of <code>tech</code>, I studied{" "}
-							<strong>philosophy, psychology, economics, math,</strong> and{" "}
-							<strong>international relations</strong>. I worked in{" "}
-							<strong>finance, law</strong>, and <strong>education</strong>.
-							<br></br>
-							<br></br>I first fell in love with <code>coding</code> in 4th grade,
-							making web pages on Neopets with <strong>HTML</strong>. Years
-							later, while studying for the LSAT, I realized that I didn't want
-							to be a lawyer, but I liked the logic puzzles section. I was
-							reminded of everything I knew about{" "}
-							<strong>computer science</strong> - Boolean algebra, truth tables,
-							and objectivity. So I moved to <strong>San Francisco</strong>,
-							completed Flatiron School's Full Stack Web Development{" "}
-							<Link
-								className={classes.links}
-								underline="none"
-								href="https://flatironschool.com/career-courses/coding-bootcamp/san-francisco"
-							>
-								immersive
-							</Link>
-							, and have been loving every day of the developer life since. As
-							they say, <code>window.history.pushState("the rest", "is")</code>
-							<br></br>
-							<br></br>
-							Other passions: dogs, piano, kickboxing, travel, weird food, and{" "}
-							<Link
-								className={classes.links}
-								underline="none"
-								href="https://www.instagram.com/p/B-AJtycgYKU/?igshid=12f3s8qalj71s"
-							>
-								memes
-							</Link>
-							.
+
+              Hi my name is Quinn Rouse and I’m a junior in computer science at Purdue University.
+              I have some experience developing software - both professional and personal.
+              This past summer I was able to intern with Total Quality Logistics where I worked with another intern to build a piece of software to automatically assess elements on a website that need to be tested, and then automatically write test cases to cover those untested elements.
+              It’s still in the process of rolling out to teams to start actually getting used, but it's been a fantastic learning experience for me, and has definitely confirmed that software development is what I want to do in the future.
+
 						</Typography>
 					</CardContent>
 				</Card>
 			</Grid>
 			<Grid item>
-				<Card className={classes.root}>
+				<Card className={classes.skillscard} justifyContent="center" alignItems="center">
 					<CardContent>
 						<Typography variant="h5" component="h2">
 							Technical Skills
@@ -151,28 +134,6 @@ export default function Home() {
 										<code>{skill.name}</code>
 									</span>
 								</a>
-							))}
-						</CardActions>
-					</CardContent>
-				</Card>
-			</Grid>
-			<Grid item>
-				<Card className={classes.root}>
-					<CardContent>
-						<Typography variant="h5" component="h2">
-							Blog Posts
-						</Typography>
-						<CardActions className={classes.paper}>
-							{blogPosts.map((item) => (
-								<Button
-									key={blogPosts.indexOf(item)}
-									className={classes.items}
-									href={item.href}
-									aria-label={item.title}
-									variant="outlined"
-								>
-									<strong>{item.title}</strong>
-								</Button>
 							))}
 						</CardActions>
 					</CardContent>

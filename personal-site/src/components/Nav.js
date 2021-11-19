@@ -35,6 +35,12 @@ export default function Nav() {
           Resume
           </Link>
         </Grid>
+        <Grid item xs={2}>
+          <Link component={RouterLink} to="/utils"
+          variant="body2" color="inherit">
+          Utils
+          </Link>
+        </Grid>
       </Grid>     
     </div>
     );

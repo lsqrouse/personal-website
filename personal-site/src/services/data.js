@@ -116,31 +116,31 @@ export const projects = [
 export const skills = [
 	{
 		name: "Python",
-		href: githubRepos.python,
+		href: '#',//githubRepos.python,
 	},
 	{
-		name: "Ruby",
-		href: githubRepos.cli,
+		name: "Java",
+		href: '#', //githubRepos.cli,
 	},
 	{
 		name: "JavaScript",
-		href: githubRepos.chatbot,
+		href: '#', //githubRepos.chatbot,
 	},
 	{
-		name: "Rails",
-		href: githubRepos.talkr,
-	},
-	// {
-	// 	name: "React",
-	// 	href: githubRepos.racoon.frontend,
-	// },
-	{
-		name: "CSS",
-		href: githubRepos.whack,
+		name: "C++",
+		href: '#', //githubRepos.talkr,
 	},
 	{
-		name: "HTML",
-		href: githubRepos.twitterClone,
+		name: "C",
+		href: '#', //githubRepos.racoon.frontend,
+	},
+	{
+		name: "HTML/CSS",
+		href: '#', //githubRepos.whack,
+	},
+	{
+		name: "PostGreSQL/SQL",
+		href: '#', //githubRepos.twitterClone,
 	},
 //	{
 	// 	name: "Test Driven Development",
@@ -148,7 +148,7 @@ export const skills = [
 	// },
 	{
 		name: "Data Structures & Algorithms",
-		href: data.leetCode,
+		href: '#', //data.leetCode,
 	},
 ];
 
@@ -166,44 +166,44 @@ export const contactItems = [
 ];
 
 export const blogPosts = [
-	{
-		href: blogURLs.personalSite,
-		title: "Personal Website with React, Material UI, & Netlify",
-	},
-	{
-		href: blogURLs.bcrypt,
-		title: "BCrypt Explained",
-	},
-	{
-		href: blogURLs.chatbot,
-		title: "JavaScript Chatbot",
-	},
-	{
-		href: blogURLs.racoon,
-		title: "COVID Symptom Checker & Map",
-	},
-	{
-		href: blogURLs.herokuConfig,
-		title: "Heroku Configuration",
-	},
-	{
-		href: blogURLs.swiftVapor,
-		title: "Swift, iOS, & Vapor",
-	},
-	{
-		href: blogURLs.healthcareAI,
-		title: "Healthcare AI & TensorFlow",
-	},
-	{
-		href: blogURLs.mapbox,
-		title: "Mapbox & Tool Tips in React",
-	},
-	{
-		href: blogURLs.whackVirus,
-		title: "Whack-a-Mole + Coronavirus",
-	},
-	{
-		href: blogURLs.ruby,
-		title: "Comparisons in Ruby Using <=>",
-	},
+	// {
+	// 	href: blogURLs.personalSite,
+	// 	title: "Personal Website with React, Material UI, & Netlify",
+	// },
+	// {
+	// 	href: blogURLs.bcrypt,
+	// 	title: "BCrypt Explained",
+	// },
+	// {
+	// 	href: blogURLs.chatbot,
+	// 	title: "JavaScript Chatbot",
+	// },
+	// {
+	// 	href: blogURLs.racoon,
+	// 	title: "COVID Symptom Checker & Map",
+	// },
+	// {
+	// 	href: blogURLs.herokuConfig,
+	// 	title: "Heroku Configuration",
+	// },
+	// {
+	// 	href: blogURLs.swiftVapor,
+	// 	title: "Swift, iOS, & Vapor",
+	// },
+	// {
+	// 	href: blogURLs.healthcareAI,
+	// 	title: "Healthcare AI & TensorFlow",
+	// },
+	// {
+	// 	href: blogURLs.mapbox,
+	// 	title: "Mapbox & Tool Tips in React",
+	// },
+	// {
+	// 	href: blogURLs.whackVirus,
+	// 	title: "Whack-a-Mole + Coronavirus",
+	// },
+	// {
+	// 	href: blogURLs.ruby,
+	// 	title: "Comparisons in Ruby Using <=>",
+	// },
 ];

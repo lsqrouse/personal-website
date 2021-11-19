@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Home from './components/Home'
 import Projects from './pages/Projects';
 import ResumePage from './pages/ResumePage';
+import Utils from './pages/Utils';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { CssBaseline, Container} from '@material-ui/core';
 import Nav from './components/Nav';
@@ -52,7 +53,9 @@ class App extends React.Component {
             <Routes>
               <Route path='/*' element={<Home/>}/>
               <Route path='/projects' element={<Projects/>}/>
-              <Route path='resume' element={<ResumePage/>}/>
+              <Route path='/resume' element={<ResumePage/>}/>
+              <Route path='/utils' element={<Utils/>}/>
+
             </Routes>
           </Router>
         </Container>
