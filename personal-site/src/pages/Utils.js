@@ -67,17 +67,12 @@ export default function Home() {
 			<Grid item xs={12}>
 				<Card className={classes.root}>
 					<CardContent>
-						{/* <Typography variant="body2" gutterBottom>
+						<Typography variant="body2" gutterBottom>
 							Hello there! This is where I have a few of my personal utility programs hosted.
                             Some of them require maintinence, or just generally are not intended for public usage.
                             Please enter the correct password below to access these resources. 
                             <br />
                             <PasswordInput/>
-						</Typography> */}
-						<Typography>
-							This will sometime be an area for personal utility programs, but none of them have been implemented on this site as of yet!
-							<img src="./images/wrench.jfif" />
-							<br></br>
 						</Typography>
 					</CardContent>
                     <CardContent>

@@ -3,7 +3,7 @@ export const data = {
 	lastName: "Rouse",
 	headline: "Current Junior in Computer Science at Purdue University",
 	profilePic: "profilepic.png",
-	website: "http://www.sylviapap.com",
+	website: "http://www.google.com",
 	github: "http://github.com/lsqrouse",
 	linkedin: "https://www.linkedin.com/in/quinn-rouse-839969168/",
 };
@@ -78,7 +78,7 @@ export const projects = [
 	},
 	{
 		title: "Trackativity",
-		imageURL: "subscribr.png",
+		imageURL: "piazza.jfif",
 		description: "Topic Tracking Service that allowed users to get notified when certain topics were posted in their Piazza class forums",
 		technology: "Python • Flask • TensorFlow • HTML/CSS",
 		source: "Hackathon Project",
@@ -86,7 +86,7 @@ export const projects = [
 	},
 	{
 		title: "File Synchronizer",
-		imageURL: "whack-virus.png",
+		imageURL: "sync.jpg",
 		//websiteURL: liveSiteURLs.whack,
 		description: "Program to synchronize large files across multiple devices",
 		technology: "Java",
@@ -95,7 +95,7 @@ export const projects = [
 	},
 	{
 		title: "Shell Clone",
-		imageURL: "chatbot.png",
+		imageURL: "shell.jpg",
 		//websiteURL: liveSiteURLs.chatbot,
 		description:
 			"A custom shell that followed the functionality of bash",
